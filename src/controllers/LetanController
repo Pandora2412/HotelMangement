@@ -1,0 +1,15 @@
+const fs = require('fs');
+const path = require('path');
+
+const LetanDB = {
+    letans: require('../../model/Letan.json'),
+    setLetans: function (data) {
+        this.letans = data;
+    }
+}
+
+function getLetan(username) {
+    return LetanDB.letans.findIndex(e => e.ID === username);
+}
+
+export {getLetan};
