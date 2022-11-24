@@ -8,7 +8,7 @@
     margin-bottom: 50px;
 }
 
-.info h4 {
+/*.info h4 {
     display: inline-block;
     color: white;
     padding: 0.5rem;
@@ -16,7 +16,23 @@
     border-radius: 0 20px 20px 0;
     background-color: #E1963C;
     margin: 1.25rem 0 1.25rem calc(var(--bs-gutter-x) * -0.5 - 3rem);
+}*/
+
+@media screen and (max-width: 600px) {
+    .info {
+        padding: 3.5rem 1rem;
+    }
+
+    .info h4 {
+        margin-left: -1.75rem;
+    }
+
+    /*.info label {
+        font-size: 0.6rem;
+    }*/
 }
+
+
 
 .info__img {
     display: flex;

@@ -1,0 +1,252 @@
+[
+    {
+        "name": "Nguyễn Thị A",
+        "sex": "Nữ",
+        "birthday": "1999-09-09",
+        "ID": "100000000000",
+        "nationality": "Việt Nam",
+        "BHXH": "0000000000",
+
+        "phone": "0909999990",
+        "email": "ABCNguyen@gmail.com",
+        "address": "99/99 đường ABC, phường XYZ, quận X, thành phố Y",
+
+        "bank": "OCB",
+        "banknum": "00000000000000000",
+        "bankadd": "Lý Thường Kiệt quận 10",
+        "bankacc": "NGUYEN THI ABC",
+        
+        "startday": "05/10/2022",
+        "position": "Quản lý",
+        "workday": "Thứ 2 - thứ 6",
+        "worktime": "6:00 am -  16:00 pm",
+        "dayoff": 4,
+        "salary": 6000000,
+        "status": "Đang làm việc" 
+    },
+    {
+        "name": "Nguyễn Thị ABC",
+        "sex": "Nữ",
+        "birthday": "1999-09-09",
+        "ID": "100000000000",
+        "nationality": "Việt Nam",
+        "BHXH": "0000000000",
+
+        "phone": "0909999990",
+        "email": "ABCNguyen@gmail.com",
+        "address": "99/99 đường ABC, phường XYZ, quận X, thành phố Y",
+
+        "bank": "OCB",
+        "banknum": "00000000000000000",
+        "bankadd": "Lý Thường Kiệt quận 10",
+        "bankacc": "NGUYEN THI ABC",
+        
+        "startday": "05/10/2022",
+        "position": "Quản lý",
+        "workday": "Thứ 2 - thứ 6",
+        "worktime": "6:00 am -  16:00 pm",
+        "dayoff": 4,
+        "salary": 6000000,
+        "status": "Đang làm việc" 
+    },
+    {
+        "name": "Nguyễn Thị ABC",
+        "sex": "Nữ",
+        "birthday": "1999-09-09",
+        "ID": "100000000000",
+        "nationality": "Việt Nam",
+        "BHXH": "0000000000",
+
+        "phone": "0909999990",
+        "email": "ABCNguyen@gmail.com",
+        "address": "99/99 đường ABC, phường XYZ, quận X, thành phố Y",
+
+        "bank": "OCB",
+        "banknum": "00000000000000000",
+        "bankadd": "Lý Thường Kiệt quận 10",
+        "bankacc": "NGUYEN THI ABC",
+        
+        "startday": "05/10/2022",
+        "position": "Quản lý",
+        "workday": "Thứ 2 - thứ 6",
+        "worktime": "6:00 am -  16:00 pm",
+        "dayoff": 4,
+        "salary": 6000000,
+        "status": "Đang làm việc" 
+    },
+    {
+        "name": "Nguyễn Thị ABC",
+        "sex": "Nữ",
+        "birthday": "1999-09-09",
+        "ID": "100000000000",
+        "nationality": "Việt Nam",
+        "BHXH": "0000000000",
+
+        "phone": "0909999990",
+        "email": "ABCNguyen@gmail.com",
+        "address": "99/99 đường ABC, phường XYZ, quận X, thành phố Y",
+
+        "bank": "OCB",
+        "banknum": "00000000000000000",
+        "bankadd": "Lý Thường Kiệt quận 10",
+        "bankacc": "NGUYEN THI ABC",
+        
+        "startday": "05/10/2022",
+        "position": "Quản lý",
+        "workday": "Thứ 2 - thứ 6",
+        "worktime": "6:00 am -  16:00 pm",
+        "dayoff": 4,
+        "salary": 6000000,
+        "status": "Đang làm việc" 
+    },
+    {
+        "name": "Nguyễn Thị ABC",
+        "sex": "Nữ",
+        "birthday": "1999-09-09",
+        "ID": "100000000000",
+        "nationality": "Việt Nam",
+        "BHXH": "0000000000",
+
+        "phone": "0909999990",
+        "email": "ABCNguyen@gmail.com",
+        "address": "99/99 đường ABC, phường XYZ, quận X, thành phố Y",
+
+        "bank": "OCB",
+        "banknum": "00000000000000000",
+        "bankadd": "Lý Thường Kiệt quận 10",
+        "bankacc": "NGUYEN THI ABC",
+        
+        "startday": "05/10/2022",
+        "position": "Quản lý",
+        "workday": "Thứ 2 - thứ 6",
+        "worktime": "6:00 am -  16:00 pm",
+        "dayoff": 4,
+        "salary": 6000000,
+        "status": "Đang làm việc" 
+    },
+    {
+        "name": "Nguyễn Thị ABC",
+        "sex": "Nữ",
+        "birthday": "1999-09-09",
+        "ID": "100000000000",
+        "nationality": "Việt Nam",
+        "BHXH": "0000000000",
+
+        "phone": "0909999990",
+        "email": "ABCNguyen@gmail.com",
+        "address": "99/99 đường ABC, phường XYZ, quận X, thành phố Y",
+
+        "bank": "OCB",
+        "banknum": "00000000000000000",
+        "bankadd": "Lý Thường Kiệt quận 10",
+        "bankacc": "NGUYEN THI ABC",
+        
+        "startday": "05/10/2022",
+        "position": "Quản lý",
+        "workday": "Thứ 2 - thứ 6",
+        "worktime": "6:00 am -  16:00 pm",
+        "dayoff": 4,
+        "salary": 6000000,
+        "status": "Đang làm việc" 
+    },
+    {
+        "name": "Nguyễn Thị ABC",
+        "sex": "Nữ",
+        "birthday": "1999-09-09",
+        "ID": "100000000000",
+        "nationality": "Việt Nam",
+        "BHXH": "0000000000",
+
+        "phone": "0909999990",
+        "email": "ABCNguyen@gmail.com",
+        "address": "99/99 đường ABC, phường XYZ, quận X, thành phố Y",
+
+        "bank": "OCB",
+        "banknum": "00000000000000000",
+        "bankadd": "Lý Thường Kiệt quận 10",
+        "bankacc": "NGUYEN THI ABC",
+        
+        "startday": "05/10/2022",
+        "position": "Quản lý",
+        "workday": "Thứ 2 - thứ 6",
+        "worktime": "6:00 am -  16:00 pm",
+        "dayoff": 4,
+        "salary": 6000000,
+        "status": "Đang làm việc" 
+    },
+    {
+        "name": "Nguyễn Thị ABC",
+        "sex": "Nữ",
+        "birthday": "1999-09-09",
+        "ID": "100000000000",
+        "nationality": "Việt Nam",
+        "BHXH": "0000000000",
+
+        "phone": "0909999990",
+        "email": "ABCNguyen@gmail.com",
+        "address": "99/99 đường ABC, phường XYZ, quận X, thành phố Y",
+
+        "bank": "OCB",
+        "banknum": "00000000000000000",
+        "bankadd": "Lý Thường Kiệt quận 10",
+        "bankacc": "NGUYEN THI ABC",
+        
+        "startday": "05/10/2022",
+        "position": "Quản lý",
+        "workday": "Thứ 2 - thứ 6",
+        "worktime": "6:00 am -  16:00 pm",
+        "dayoff": 4,
+        "salary": 6000000,
+        "status": "Đang làm việc" 
+    },
+    {
+        "name": "Nguyễn Thị ABC",
+        "sex": "Nữ",
+        "birthday": "1999-09-09",
+        "ID": "100000000000",
+        "nationality": "Việt Nam",
+        "BHXH": "0000000000",
+
+        "phone": "0909999990",
+        "email": "ABCNguyen@gmail.com",
+        "address": "99/99 đường ABC, phường XYZ, quận X, thành phố Y",
+
+        "bank": "OCB",
+        "banknum": "00000000000000000",
+        "bankadd": "Lý Thường Kiệt quận 10",
+        "bankacc": "NGUYEN THI ABC",
+        
+        "startday": "05/10/2022",
+        "position": "Quản lý",
+        "workday": "Thứ 2 - thứ 6",
+        "worktime": "6:00 am -  16:00 pm",
+        "dayoff": 4,
+        "salary": 7000000,
+        "status": "Đang làm việc" 
+    },
+    {
+        "name": "Nguyễn Thị ABC",
+        "sex": "Nữ",
+        "birthday": "1999-09-09",
+        "ID": "100000000000",
+        "nationality": "Việt Nam",
+        "BHXH": "0000000000",
+
+        "phone": "0909999990",
+        "email": "ABCNguyen@gmail.com",
+        "address": "99/99 đường ABC, phường XYZ, quận X, thành phố Y",
+
+        "bank": "OCB",
+        "banknum": "00000000000000000",
+        "bankadd": "Lý Thường Kiệt quận 10",
+        "bankacc": "NGUYEN THI ABC",
+        
+        "startday": "05/10/2022",
+        "position": "Quản lý",
+        "workday": "Thứ 2 - thứ 6",
+        "worktime": "6:00 am -  16:00 pm",
+        "dayoff": 4,
+        "salary": 7000000,
+        "status": "Đang làm việc" 
+    }
+]
