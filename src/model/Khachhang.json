@@ -1,0 +1,172 @@
+[
+	{
+		"name": "Nguyễn Thị A",
+		"CCCD": "10000000001",
+		"phone": "0900000001",
+		"email": "anguyen@gmail.com",
+		"sex": "Nữ",
+        "bday": "01/01/1990",
+		"score": 300,
+		"rank": "Silver"
+	},
+	{
+		"name": "Nguyễn Văn B",
+		"CCCD": "10000000002",
+		"phone": "0900000002",
+		"email": "bnguyen@gmail.com",
+		"sex": "Nam",
+        "bday": "01/01/1990",
+		"score": 1305,
+		"rank": "Diamond"
+	},
+	{
+		"name": "Nguyễn Thị C",
+		"CCCD": "10000000003",
+		"phone": "0900000003",
+		"email": "cnguyen@gmail.com",
+		"sex": "Nữ",
+        "bday": "01/01/1990",
+		"score": 366,
+		"rank": "Silver"
+	},
+	{
+		"name": "Nguyễn Thị D",
+		"CCCD": "10000000004",
+		"phone": "0900000004",
+		"email": "dnguyen@gmail.com",
+		"sex": "Nữ",
+        "bday": "01/01/1990",
+		"score": 266,
+		"rank": "Silver"
+	},
+	{
+		"name": "Nguyễn Văn E",
+		"CCCD": "10000000005",
+		"phone": "0900000005",
+		"email": "enguyen@gmail.com",
+		"sex": "Nam",
+        "bday": "01/01/1990",
+		"score": 183,
+		"rank": "Bronze"
+	},
+	{
+		"name": "Nguyễn Văn F",
+		"CCCD": "10000000006",
+		"phone": "0900000006",
+		"email": "fnguyen@gmail.com",
+		"sex": "Nam",
+        "bday": "01/01/1990",
+		"score": 102,
+		"rank": "Bronze"
+	},
+	{
+		"name": "Nguyễn Thị G",
+		"CCCD": "10000000007",
+		"phone": "0900000007",
+		"email": "gnguyen@gmail.com",
+		"sex": "Nữ",
+        "bday": "01/01/1990",
+		"score": 621,
+		"rank": "Gold"
+	},
+	{
+		"name": "Nguyễn Thị H",
+		"CCCD": "10000000008",
+		"phone": "0900000008",
+		"email": "hnguyen@gmail.com",
+		"sex": "Nữ"	,
+        "bday": "01/01/1990",
+		"score": 973,
+		"rank": "Gold"
+	},
+	{
+		"name": "Nguyễn Thị I",
+		"CCCD": "10000000009",
+		"phone": "0900000009",
+		"email": "inguyen@gmail.com",
+		"sex": "Nữ"	,
+        "bday": "01/01/1990",
+		"score": 1051,
+		"rank": "Diamond"
+	},
+	{
+		"name": "Nguyễn Văn J",
+		"CCCD": "10000000010",
+		"phone": "0900000010",
+		"email": "jnguyen@gmail.com",
+		"sex": "Nam",
+        "bday": "01/01/1990",
+		"score": 525,
+		"rank": "Gold"	
+	},
+	{
+		"name": "Nguyễn Văn K",
+		"CCCD": "10000000011",
+		"phone": "0900000011",
+		"email": "knguyen@gmail.com",
+		"sex": "Nam",
+        "bday": "01/01/1990",
+		"score": 1459,
+		"rank": "Diamond"	
+	},
+	{
+		"name": "Nguyễn Văn L",
+		"CCCD": "10000000012",
+		"phone": "0900000012",
+		"email": "lnguyen@gmail.com",
+		"sex": "Nam",
+        "bday": "01/01/1990",
+		"score": 1021,
+		"rank": "Diamond"	
+	},
+	{
+		"name": "Nguyễn Thị M",
+		"CCCD": "10000000013",
+		"phone": "0900000013",
+		"email": "mnguyen@gmail.com",
+		"sex": "Nữ",
+        "bday": "01/01/1990",
+		"score": 541,
+		"rank": "Gold"	
+	},
+	{
+		"name": "Nguyễn Thị N",
+		"CCCD": "10000000014",
+		"phone": "0900000014",
+		"email": "nnguyen@gmail.com",
+		"sex": "Nữ",
+        "bday": "01/01/1990",
+		"score": 207,
+		"rank": "Silver"	
+	},
+	{
+		"name": "Nguyễn Thị O",
+		"CCCD": "10000000015",
+		"phone": "0900000015",
+		"email": "onguyen@gmail.com",
+		"sex": "Nữ",
+        "bday": "01/01/1990",
+		"score": 1075,
+		"rank": "Diamond"	
+	},
+	{
+		"name": "Nguyễn Thị P",
+		"CCCD": "10000000016",
+		"phone": "0900000016",
+		"email": "pnguyen@gmail.com",
+		"sex": "Nữ",
+        "bday": "01/01/1990",
+		"score": 872,
+		"rank": "Gold"	
+	},
+	{
+		"name": "Nguyễn Văn Q",
+		"CCCD": "10000000017",
+		"phone": "0900000017",
+		"email": "qnguyen@gmail.com",
+		"sex": "Nam",
+        "bday": "01/01/1990",
+		"score": 160,
+		"rank": "Bronze"	
+	}
+]
