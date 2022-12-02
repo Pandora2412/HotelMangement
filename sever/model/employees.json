@@ -1,0 +1,21 @@
+[
+ {
+  "name": "Nguyễn Văn A",
+  "startday": "tháng 10 năm 2022",
+  "birthday": "09/09/1999",
+  "sex": "Nữ",
+  "id": "000000000000",
+  "BHXH": "0000000000",
+  "email": "ANguyen@gmail.com",
+  "phone": "0909999999",
+  "address": "99/99 đường ABC, phường XYZ, quận X, thành phố Y",
+  "bank": "OCB",
+  "bankadd": "Lý Thường Kiệt quận 10",
+  "banknum": "00000000000000000",
+  "workday": "Thứ 2 - thứ 6",
+  "worktime": "6:00 am -  16:00 pm",
+  "dayoff": 4,
+  "salary": 6000000,
+  "job": "Lễ tân"
+ }
+]

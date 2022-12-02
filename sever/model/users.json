@@ -1,0 +1,26 @@
+[
+ {
+  "username": "999999999999",
+  "password": "$2b$10$cJpQG.rCH/jsNMYRBQSbmujG0f9uwl9jqfKAktAtJI37gwFVZftH.",
+  "roles": {
+   "Admin": 1000
+  },
+  "refeshToken": ""
+ },
+ {
+  "username": "111111111111",
+  "password": "$2b$10$C4vJmpM9bzFNL64YAJh0H.oCKr8bBidgZ1mB/9isTI80RK1hCEmLe",
+  "roles": {
+   "Quanly": 2000
+  },
+  "refeshToken": ""
+ },
+ {
+  "username": "000000000000",
+  "password": "$2b$10$YUvyUptlpo7I8x.NkkuUEeHTzIm7f9pfFXye22oo7.YLfy.wyVPMS",
+  "roles": {
+   "Letan": 3000
+  },
+  "refeshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IjAwMDAwMDAwMDAwMCIsImlhdCI6MTY2OTk2MzE1MywiZXhwIjoxNjcwMDQ5NTUzfQ.tdHZUCALBcUHIkEqWtwNNSUIviIR1S9AGg6-FypbWa8"
+ }
+]
