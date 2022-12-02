@@ -12,21 +12,15 @@ import {HiPencilAlt} from 'react-icons/hi'
 
 import {StyledTableRow, StyledTableCell, StyledTableHead} from '../../components/Table'
 import { StyledButton } from '../../components/Button';
-import {StyledModal} from '../../components/Modal';
+import {StyledModal, ConfirmModal} from '../../components/Modal';
 import Info from '../../components/Info';
 
 const ModalInfo = (props) => {
+  const [openConfirmModal, setOpenConfirmModal] = useState("")
   return (
     <>
     <style type = "text/css">
       {`
-        @media (min-width: 576px) {
-          .modal-dialog {
-            max-width: 85vw;
-            //max-height: 90vh;
-            //overflow: scroll;
-          }
-        }
         h4 {
           margin-left: calc(var(--bs-gutter-x) * -0.5 - var(--bs-modal-padding)) !important;
         }
@@ -35,13 +29,14 @@ const ModalInfo = (props) => {
         }
       `}
       </style>
-    <StyledModal show={true} centered backdrop="static" onHide = {props.onHide}>
+    <StyledModal show={true} size="xl" centered backdrop="static" onHide={()=>{setOpenConfirmModal("Xác nhận hủy thay đổi?")}}>
       <Modal.Header closeButton></Modal.Header>
       <Modal.Body>
         <Info info = {props.info}></Info>
       </Modal.Body>
       
     </StyledModal>
+    {openConfirmModal !== "" && <ConfirmModal text = {openConfirmModal} open = {setOpenConfirmModal} openParent = {props.open}></ConfirmModal>}
     </>
     
   )
@@ -142,7 +137,7 @@ const NhanVien = () => {
           rowsPerPage={10}
           rowsPerPageOptions={[]}
         />
-        {openModalInfo !== "" && <ModalInfo show={openModalInfo} info = {openModalInfo} onHide = {() => setOpenModalInfo("")} ></ModalInfo>}
+        {openModalInfo !== "" && <ModalInfo show={openModalInfo} info = {openModalInfo} open = {setOpenModalInfo}></ModalInfo>}
       </div>
     );
 }

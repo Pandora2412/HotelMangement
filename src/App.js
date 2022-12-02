@@ -1,13 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
-import Info from './components/Info.js'
+import QuanLy from './routes/QuanLy'
 
 
 function App() {
   console.log("hi")
   return (
     <div className="App">
-      <Info></Info>
+      <QuanLy></QuanLy>
     </div>
   );
 }

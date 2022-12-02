@@ -109,8 +109,9 @@ const Cost = (props) => {
     })
   }
   const [costInfo, setCostInfo] = useState(props.info)
+  const [openConfirmModal, setOpenConfirmModal] = useState("")
   return (
-    <StyledModal show = {true} aria-labelledby="contained-modal-title-vcenter" centered backdrop="static" onHide = {props.onHide}>
+    <StyledModal show = {true} aria-labelledby="contained-modal-title-vcenter" centered backdrop="static" onHide={()=>{setOpenConfirmModal("Xác nhận hủy thay đổi?")}}>
       <Modal.Header closeButton></Modal.Header>
         <Modal.Body>
           <h3>Bảng giá</h3>
@@ -128,6 +129,7 @@ const Cost = (props) => {
           <StyledButton>Áp dụng</StyledButton>
           </form>
         </Modal.Body>
+        {openConfirmModal !== "" && <ConfirmModal text = {openConfirmModal} open = {setOpenConfirmModal} openParent = {props.open}></ConfirmModal>}
     </StyledModal>
   )
 
@@ -258,7 +260,7 @@ const Phong = () => {
           rowsPerPageOptions={[]}
         />
         {openModalRoom !== "" && <Room info = {openModalRoom} open = {setOpenModalRoom}></Room>}
-        {openModalCost !== "" && <Cost info = {openModalCost} onHide = {() => setOpenModalCost("")}></Cost>}
+        {openModalCost !== "" && <Cost info = {openModalCost} open = {setOpenModalCost}></Cost>}
       </div>
     );
 }
