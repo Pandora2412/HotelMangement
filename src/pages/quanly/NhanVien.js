@@ -1,4 +1,4 @@
-import {useState} from 'react'
+import {useState, useEffect} from 'react'
 import Table from '@mui/material/Table';
 import TableContainer from '@mui/material/TableContainer';
 import TableBody from '@mui/material/TableBody'
@@ -17,6 +17,7 @@ import Info from '../../components/Info';
 
 const ModalInfo = (props) => {
   const [openConfirmModal, setOpenConfirmModal] = useState("")
+  
   return (
     <>
     <style type = "text/css">
@@ -32,11 +33,11 @@ const ModalInfo = (props) => {
     <StyledModal show={true} size="xl" centered backdrop="static" onHide={()=>{setOpenConfirmModal("Xác nhận hủy thay đổi?")}}>
       <Modal.Header closeButton></Modal.Header>
       <Modal.Body>
-        <Info info = {props.info}></Info>
+        <Info info = {props.info} employees={props.employees} setEmployees={props.setEmployees} open = {props.open}></Info>
       </Modal.Body>
       
     </StyledModal>
-    {openConfirmModal !== "" && <ConfirmModal text = {openConfirmModal} open = {setOpenConfirmModal} openParent = {props.open}></ConfirmModal>}
+    {openConfirmModal !== "" && <ConfirmModal text = {openConfirmModal} open = {setOpenConfirmModal} openParent = {props.open} action={()=>void(0)}></ConfirmModal>}
     </>
     
   )
@@ -66,47 +67,65 @@ const NhanVien = () => {
             id: 'phone',
             label: 'Số điện thoại',
             sort: false,
-            align: 'left'
+            align: 'center'
         },
         {
             id: 'status',
             label: 'Trình trạng',
             sort: false,
-            align: 'left'
+            align: 'center'
         },
         {
             id: 'salary',
             label: 'Lương',
             sort: true,
-            align: 'left'
+            align: 'center'
         },
         {
 
         }
     ];
 
-    const nhanVienDB = require('../../model/nhanvien.json')
+    const [employees, setEmployees] = useState([])
+
+    useEffect(() => {
+      setEmployees(require('../../model/nhanvien.json'))
+    }, [])
+
     const [orderByColumn, setOrderByColumn] = useState("")
     const [orderDirection, setOrderDirection] = useState("asc")
+    const [filter, setFilter] = useState("")
     const [page, setPage] = useState(0)
     const [openModalInfo, setOpenModalInfo] = useState("")
+    const [status, setStatus] = useState("Đang làm việc")
 
     const handleSortRequest = (id) => {
       setOrderByColumn(id)
       setOrderDirection(id === orderByColumn && orderDirection === "asc" ? "desc" : "asc")
     } 
 
+    
     return (
       <div className = "main">
         <Row className = "mb-2">
-          <Col xs = "3"><StyledButton onClick = {() => setOpenModalInfo(true)}>Thêm nhân viên mới</StyledButton></Col>
-          <Col xs = "9">
+          <Col xs = "6">
+            <div class="d-flex">
+              <StyledButton onClick = {() => setOpenModalInfo(true)} style={{marginRight: "12px"}}>Thêm nhân viên mới</StyledButton>
+              <Form.Select className = "float-end" style = {{maxWidth: '200px'}} aria-label="Default select example" onChange = {(option) => setStatus(option.target.value)}>
+                  <option value="Đang làm việc">Đang làm việc</option>
+                  <option value="Đã nghỉ">Đã nghỉ</option>
+              </Form.Select>
+            </div>
+            
+          </Col>
+          <Col xs = "6">
               <Form.Control 
                       type="search"
                       placeholder="Search"
                       className="float-end"
                       aria-label="Search"
                       style = {{maxWidth: '300px'}}
+                      onChange={(e)=>setFilter(e.target.value)}
                 />
           </Col>
         </Row>
@@ -115,8 +134,10 @@ const NhanVien = () => {
             <StyledTableHead columns = {columns} orderByColumn = {orderByColumn} orderDirection = {orderDirection} handleSortRequest = {handleSortRequest}></StyledTableHead>
             
             <TableBody>
+              {console.log(employees)}
               {
-                nhanVienDB.sort((a, b) => (orderDirection === "asc" ? a[orderByColumn] - b[orderByColumn] : b[orderByColumn] - a[orderByColumn])).slice(page * 10, page * 10 + 10).map((row) => (
+                
+                employees.filter(e => e.status === status).filter(nhanvien => nhanvien['name'].toLowerCase().includes(filter)).sort((a, b) => (orderDirection === "asc" ? a[orderByColumn] - b[orderByColumn] : b[orderByColumn] - a[orderByColumn])).slice(page * 10, page * 10 + 10).map((row) => (
                   <StyledTableRow key={row.id}>
                     {
                       columns.slice(0, columns.length - 1).map((column, index) => {
@@ -132,12 +153,12 @@ const NhanVien = () => {
             </TableBody>
           </Table>
         </TableContainer>
-        <TablePagination component="div" count = {nhanVienDB.length} page={page}
+        <TablePagination component="div" count = {employees.length} page={page}
           onPageChange={(e, newPage) => setPage(newPage)}
           rowsPerPage={10}
           rowsPerPageOptions={[]}
         />
-        {openModalInfo !== "" && <ModalInfo show={openModalInfo} info = {openModalInfo} open = {setOpenModalInfo}></ModalInfo>}
+        {openModalInfo !== "" && <ModalInfo show={openModalInfo} info = {openModalInfo} open = {setOpenModalInfo} employees={employees} setEmployees={setEmployees}></ModalInfo>}
       </div>
     );
 }

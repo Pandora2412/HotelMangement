@@ -15,9 +15,10 @@ import {BiReceipt} from 'react-icons/bi'
 import {SiSimpleanalytics} from 'react-icons/si'
 import {HiOutlineReceiptRefund} from 'react-icons/hi'
 import '../App.css';
+import { Outlet } from 'react-router-dom'
 
 const QuanLy = () => {
-    const tab_list = [<ThongTin/>,<NhanVien/>,<Phong/>,<HoaDon/>,<BaoCao/>,<HuyDon/>,<ThongBao/>]
+    /*const tab_list = [<ThongTin/>,<NhanVien/>,<Phong/>,<HoaDon/>,<BaoCao/>,<HuyDon/>,<ThongBao/>]
     const nav_list = [
         [<IoPersonOutline className = 'functionicon'/>, 'Thông Tin'],
         [<FiUsers className = 'functionicon'/>, 'Nhân viên'],
@@ -27,13 +28,14 @@ const QuanLy = () => {
         [<HiOutlineReceiptRefund className = 'functionicon'/>, 'Hủy đơn'],
         [<MdNotificationsNone className = 'functionicon'/>, 'Thông báo']
     ]
-    const [tab, setTab] = useState(0)
+    const [tab, setTab] = useState(0)*/
     const [menuOn, setMenuOn] = useState(false)
     return (
         <>
             {!menuOn && <button className = 'Rightbutton' onClick = {() => setMenuOn(true)}><AiOutlineDoubleRight className="icon"/></button>}
-            {tab_list[tab]}
-            {menuOn && <SideBar nav_list = {nav_list} handleSidebar = {setTab} handleView={setMenuOn} tab = {tab}/>}
+            {/*tab_list[tab]*/}
+            <Outlet/>
+            {menuOn && <SideBar handleView={setMenuOn}/>}
         </>
     );
 }

@@ -1,4 +1,4 @@
-import {useState} from 'react'
+import {useState, useEffect} from 'react'
 import Table from '@mui/material/Table';
 import TableContainer from '@mui/material/TableContainer';
 import TableBody from '@mui/material/TableBody'
@@ -22,9 +22,17 @@ const Room = (props) => {
         [e.target.name]: e.target.value
     })
   }
+
+  const handleRoom = () => {
+    const new_rooms = props.rooms.map((room) =>
+      room.id === room_info.id && room.toa === props.toa ? {...room_info} : room 
+    )
+    props.setRooms(new_rooms)
+  }
+
   const [room_info, setRoomInfo] = useState(props.info)
   const [openConfirmModal, setOpenConfirmModal] = useState("")
-
+  
   return (
     <>
     <StyledModal show={true} aria-labelledby="contained-modal-title-vcenter" centered backdrop="static" onHide={()=>{setOpenConfirmModal("Xác nhận hủy thay đổi?")}}>
@@ -35,7 +43,7 @@ const Room = (props) => {
             <Container>
               <Row>
                 <Col xs = {5} style = {{textAlign: 'right'}}><label>Tên phòng:</label></Col>
-                <Col xs = {7}><input type="text" name = "id" value = {room_info.id} onChange = {handleChange}></input></Col>
+                <Col xs = {7}><input type="text" name = "id" value = {room_info.id} disabled></input></Col>
               </Row>
               <Row>
                 <Col xs = {5} style = {{textAlign: 'right'}}><label>Loại phòng:</label></Col>
@@ -92,11 +100,11 @@ const Room = (props) => {
                 </Col>
               </Row>
             </Container>
-          <StyledButton>Áp dụng</StyledButton>
+          <StyledButton onClick={()=>{setOpenConfirmModal("Xác nhận lưu thay đổi?")}}>Áp dụng</StyledButton>
           </form>
         </Modal.Body>
     </StyledModal>
-    {openConfirmModal !== "" && <ConfirmModal text = {openConfirmModal} open = {setOpenConfirmModal} openParent = {props.open}></ConfirmModal>}
+    {openConfirmModal !== "" && <ConfirmModal text = {openConfirmModal} open = {setOpenConfirmModal} openParent = {props.open} action={handleRoom}></ConfirmModal>}
     </>
 )}
 
@@ -108,6 +116,11 @@ const Cost = (props) => {
         [e.target.name]: e.target.value
     })
   }
+
+  const handleCosts = () => {
+    props.setCosts(costInfo)
+  }
+  
   const [costInfo, setCostInfo] = useState(props.info)
   const [openConfirmModal, setOpenConfirmModal] = useState("")
   return (
@@ -126,10 +139,10 @@ const Cost = (props) => {
                 ))
               }
             </Container>
-          <StyledButton>Áp dụng</StyledButton>
+          <StyledButton onClick={()=>{setOpenConfirmModal("Xác nhận lưu thay đổi?")}}>Áp dụng</StyledButton>
           </form>
         </Modal.Body>
-        {openConfirmModal !== "" && <ConfirmModal text = {openConfirmModal} open = {setOpenConfirmModal} openParent = {props.open}></ConfirmModal>}
+        {openConfirmModal !== "" && <ConfirmModal text = {openConfirmModal} open = {setOpenConfirmModal} openParent = {props.open} action={handleCosts}></ConfirmModal>}
     </StyledModal>
   )
 
@@ -190,14 +203,32 @@ const Phong = () => {
       },
     ];
 
-    const phongDB = require('../../model/phong.json')
-    const costDB = require('../../model/gia.json')
+    const [rooms, setRooms] = useState([])
+    const [costs, setCosts] = useState([])
+
+    useEffect(() => {
+      setRooms(require('../../model/phong.json'))
+      setCosts(require('../../model/gia.json'))
+    }, [])
+
     const [openModalRoom, setOpenModalRoom] = useState("")
     const [openModalCost, setOpenModalCost] = useState("")
     const [orderByColumn, setOrderByColumn] = useState(columns[0].id)
     const [orderDirection, setOrderDirection] = useState("asc")
     const [page, setPage] = useState(0)
     const [toa, setToa] = useState("A")
+    const [filter, setFilter] = useState("")
+
+    const calcCost = (room) => {
+      let cost = parseInt(costs[room["type"].toLowerCase()])
+      cost = cost + room["singlebed"] * parseInt(costs["singlebed"]) + room["doublebed"] * parseInt(costs["doublebed"])
+      if (room["view"] === "Biển") cost += parseInt(costs["sea"])
+      else if (room["view"] === "Hồ bơi") cost += parseInt(costs["pool"])
+      else cost += parseInt(costs["city"])
+      if (room["bancong"] === "Có") cost += parseInt(costs["balcony"])
+      //cost += costs[room["view"].toLowerCase()]
+      return cost.toLocaleString('de-DE', { minimumFractionDigits: 0 })
+    }
 
     const handleSortRequest = (id) => {
       setOrderByColumn(id)
@@ -207,7 +238,7 @@ const Phong = () => {
     return (
       <div className = "main">
         <Row className = "mb-2">
-          <Col xs = "3"><StyledButton onClick = {() => setOpenModalCost({...costDB})}>Tổng quát</StyledButton></Col>
+          <Col xs = "3"><StyledButton onClick = {() => setOpenModalCost({...costs})}>Tổng quát</StyledButton></Col>
           <Col xs = "9">
             <Row>
               <Col xs = "10">
@@ -217,6 +248,7 @@ const Phong = () => {
                       className="me-2 float-end"
                       aria-label="Search"
                       style = {{maxWidth: '300px'}}
+                      onChange={(e)=>setFilter(e.target.value)}
                 />
               </Col>
               <Col xs = "2">
@@ -237,16 +269,19 @@ const Phong = () => {
             <StyledTableHead columns = {columns} orderByColumn = {orderByColumn} orderDirection = {orderDirection} handleSortRequest = {handleSortRequest}></StyledTableHead>
             <TableBody>
               {
-                phongDB.filter(e => e.toa === toa).sort((a, b) => (orderDirection === "asc" ? a[orderByColumn] - b[orderByColumn] : b[orderByColumn] - a[orderByColumn])).slice(page * 10, page * 10 + 10).map((row) => (
+                rooms.filter(e => e.toa === toa).filter(phong => phong['id'].toString().includes(filter)).sort((a, b) => (orderDirection === "asc" ? a[orderByColumn] - b[orderByColumn] : b[orderByColumn] - a[orderByColumn])).slice(page * 10, page * 10 + 10).map((row) => (
                 <StyledTableRow key={row.id}>
                   {
                       
                       Object.entries(row).map(([key, value], index) => {
-                          if (key !== 'bookday' && key !== 'toa')
+                          if (key !== 'bookday' && key !== 'toa' && key != "price")
                           return (
                           <StyledTableCell align = {columns[index].align} key = {index}>{value}</StyledTableCell>
                       )})
                   }
+                  {<StyledTableCell align = "right">{calcCost(row)}</StyledTableCell>}
+                      
+                  
                   <StyledTableCell><HiPencilAlt className = "btn-edit" onClick = {() => setOpenModalRoom({...row})}></HiPencilAlt></StyledTableCell>
                 </StyledTableRow>
                 ))}
@@ -254,13 +289,13 @@ const Phong = () => {
             </TableBody>
           </Table>
         </TableContainer>
-        <TablePagination component="div" count = {phongDB.filter(e => e.toa === toa).length} page={page}
+        <TablePagination component="div" count = {rooms.filter(e => e.toa === toa).length} page={page}
           onPageChange={(e, newPage) => setPage(newPage)}
           rowsPerPage={10}
           rowsPerPageOptions={[]}
         />
-        {openModalRoom !== "" && <Room info = {openModalRoom} open = {setOpenModalRoom}></Room>}
-        {openModalCost !== "" && <Cost info = {openModalCost} open = {setOpenModalCost}></Cost>}
+        {openModalRoom !== "" && <Room info = {openModalRoom} open = {setOpenModalRoom} rooms={rooms} setRooms={setRooms} toa={toa}></Room>}
+        {openModalCost !== "" && <Cost info = {openModalCost} open = {setOpenModalCost} setCosts={setCosts}></Cost>}
       </div>
     );
 }

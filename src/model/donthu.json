@@ -1,0 +1,243 @@
+[
+    {
+     "formnum": "ABC0003",
+     "customer": {
+      "name": "Nguyễn Văn B",
+      "id": "123456789012",
+      "sex": "Nam",
+      "phone": "0777777777",
+      "email": "a@gmail.com",
+      "bday": "1990-01-01",
+      "checkin": "2022-12-25T10:00",
+      "checkout": "2022-12-30T12:00"
+     },
+     "accompanies": [
+        {"name": "Nguyễn Thanh C", "id": "074545545454"}
+     ],
+     "rooms": [
+      {
+       "toa": "A",
+       "id": 105,
+       "name": "Phòng 105 tòa A: Standard 1 giường đơn, 0 giường đôi, view Biển, Có ban công",
+       "price": 1100000,
+       "quantity": 50,
+       "totalPrice": 2291667
+      },
+      {
+       "toa": "A",
+       "id": 106,
+       "name": "Phòng 106 tòa A: Standard 1 giường đơn, 0 giường đôi, view Biển, Có ban công",
+       "price": 1100000,
+       "quantity": 50,
+       "totalPrice": 2291667
+      }
+     ],
+     "services": [],
+     "total": 4583334,
+     "paid": 4583334
+    },
+    {
+        "formnum": "ABC0004",
+        "customer": {
+         "name": "",
+         "id": "123456789012",
+         "phone": "",
+         "email": "a@gmail.com",
+         "bday": "1990-01-01",
+         "checkin": "2022-12-07T10:00",
+         "checkout": "2022-12-09T12:00"
+        },
+        "accompanies": [],
+        "rooms": [
+         {
+          "toa": "A",
+          "id": 105,
+          "name": "Phòng 105 tòa A: Standard 1 giường đơn, 0 giường đôi, view Biển, Có ban công",
+          "price": 1100000,
+          "quantity": 50,
+          "totalPrice": 2291667
+         },
+         {
+          "toa": "A",
+          "id": 106,
+          "name": "Phòng 106 tòa A: Standard 1 giường đơn, 0 giường đôi, view Biển, Có ban công",
+          "price": 1100000,
+          "quantity": 50,
+          "totalPrice": 2291667
+         }
+        ],
+        "services": [],
+        "total": 4583337,
+        "paid": 4583337
+       },
+       {
+        "formnum": "ABC0005",
+        "customer": {
+         "name": "",
+         "id": "123456789012",
+         "phone": "",
+         "email": "a@gmail.com",
+         "bday": "1990-01-01",
+         "checkin": "2022-12-07T10:00",
+         "checkout": "2022-12-09T12:00"
+        },
+        "accompanies": [],
+        "rooms": [
+         {
+          "toa": "A",
+          "id": 105,
+          "name": "Phòng 105 tòa A: Standard 1 giường đơn, 0 giường đôi, view Biển, Có ban công",
+          "price": 1100000,
+          "quantity": 50,
+          "totalPrice": 2291667
+         },
+         {
+          "toa": "A",
+          "id": 106,
+          "name": "Phòng 106 tòa A: Standard 1 giường đơn, 0 giường đôi, view Biển, Có ban công",
+          "price": 1100000,
+          "quantity": 50,
+          "totalPrice": 2291667
+         }
+        ],
+        "services": [],
+        "total": 4583337,
+        "paid": 4583337
+       },
+       {
+        "formnum": "ABC0006",
+        "customer": {
+         "name": "",
+         "id": "123456789012",
+         "phone": "",
+         "email": "a@gmail.com",
+         "bday": "1990-01-01",
+         "checkin": "2022-12-07T10:00",
+         "checkout": "2022-12-09T12:00"
+        },
+        "accompanies": [],
+        "rooms": [
+         {
+          "toa": "A",
+          "id": 105,
+          "name": "Phòng 105 tòa A: Standard 1 giường đơn, 0 giường đôi, view Biển, Có ban công",
+          "price": 1100000,
+          "quantity": 50,
+          "totalPrice": 2291667
+         },
+         {
+          "toa": "A",
+          "id": 106,
+          "name": "Phòng 106 tòa A: Standard 1 giường đơn, 0 giường đôi, view Biển, Có ban công",
+          "price": 1100000,
+          "quantity": 50,
+          "totalPrice": 2291667
+         }
+        ],
+        "services": [],
+        "total": 4583337,
+        "paid": 4583337
+       },
+       {
+        "formnum": "ABC0007",
+        "customer": {
+         "name": "",
+         "id": "123456789012",
+         "phone": "",
+         "email": "a@gmail.com",
+         "bday": "1990-01-01",
+         "checkin": "2022-12-07T10:00",
+         "checkout": "2022-12-09T12:00"
+        },
+        "accompanies": [],
+        "rooms": [
+         {
+          "toa": "A",
+          "id": 105,
+          "name": "Phòng 105 tòa A: Standard 1 giường đơn, 0 giường đôi, view Biển, Có ban công",
+          "price": 1100000,
+          "quantity": 50,
+          "totalPrice": 2291667
+         },
+         {
+          "toa": "A",
+          "id": 106,
+          "name": "Phòng 106 tòa A: Standard 1 giường đơn, 0 giường đôi, view Biển, Có ban công",
+          "price": 1100000,
+          "quantity": 50,
+          "totalPrice": 2291667
+         }
+        ],
+        "services": [],
+        "total": 4583337,
+        "paid": 4583337
+       },
+       {
+        "formnum": "ABC0008",
+        "customer": {
+         "name": "",
+         "id": "123456789012",
+         "phone": "",
+         "email": "a@gmail.com",
+         "bday": "1990-01-01",
+         "checkin": "2022-12-07T10:00",
+         "checkout": "2022-12-09T12:00"
+        },
+        "accompanies": [],
+        "rooms": [
+         {
+          "toa": "A",
+          "id": 105,
+          "name": "Phòng 105 tòa A: Standard 1 giường đơn, 0 giường đôi, view Biển, Có ban công",
+          "price": 1100000,
+          "quantity": 50,
+          "totalPrice": 2291667
+         },
+         {
+          "toa": "A",
+          "id": 106,
+          "name": "Phòng 106 tòa A: Standard 1 giường đơn, 0 giường đôi, view Biển, Có ban công",
+          "price": 1100000,
+          "quantity": 50,
+          "totalPrice": 2291667
+         }
+        ],
+        "services": [],
+        "total": 4583337,
+        "paid": 4583337
+       },
+       {
+        "formnum": "ABC0009",
+        "customer": {
+         "name": "",
+         "id": "123456789012",
+         "phone": "",
+         "email": "a@gmail.com",
+         "bday": "1990-01-01",
+         "checkin": "2022-12-07T10:00",
+         "checkout": "2022-12-09T12:00"
+        },
+        "accompanies": [],
+        "rooms": [
+         {
+          "toa": "A",
+          "id": 105,
+          "name": "Phòng 105 tòa A: Standard 1 giường đơn, 0 giường đôi, view Biển, Có ban công",
+          "price": 1100000,
+          "quantity": 50,
+          "totalPrice": 2291667
+         },
+         {
+          "toa": "A",
+          "id": 106,
+          "name": "Phòng 106 tòa A: Standard 1 giường đơn, 0 giường đôi, view Biển, Có ban công",
+          "price": 1100000,
+          "quantity": 50,
+          "totalPrice": 2291667
+         }
+        ],
+        "services": [],
+        "total": 4583337,
+        "paid": 4583337
+       }
+   ]

@@ -1,5 +1,6 @@
 [
     {
+        "id": 1,
         "name": "Nguyễn Thị A",
         "sex": "Nữ",
         "birthday": "1999-09-09",
@@ -25,6 +26,7 @@
         "status": "Đang làm việc" 
     },
     {
+        "id": 2,
         "name": "Nguyễn Thị ABC",
         "sex": "Nữ",
         "birthday": "1999-09-09",
@@ -50,6 +52,7 @@
         "status": "Đang làm việc" 
     },
     {
+        "id": 3,
         "name": "Nguyễn Thị ABC",
         "sex": "Nữ",
         "birthday": "1999-09-09",
@@ -75,6 +78,7 @@
         "status": "Đang làm việc" 
     },
     {
+        "id": 4,
         "name": "Nguyễn Thị ABC",
         "sex": "Nữ",
         "birthday": "1999-09-09",
@@ -100,6 +104,7 @@
         "status": "Đang làm việc" 
     },
     {
+        "id": 5,
         "name": "Nguyễn Thị ABC",
         "sex": "Nữ",
         "birthday": "1999-09-09",
@@ -125,6 +130,7 @@
         "status": "Đang làm việc" 
     },
     {
+        "id": 6,
         "name": "Nguyễn Thị ABC",
         "sex": "Nữ",
         "birthday": "1999-09-09",
@@ -150,6 +156,7 @@
         "status": "Đang làm việc" 
     },
     {
+        "id": 7,
         "name": "Nguyễn Thị ABC",
         "sex": "Nữ",
         "birthday": "1999-09-09",
@@ -175,6 +182,7 @@
         "status": "Đang làm việc" 
     },
     {
+        "id": 8,
         "name": "Nguyễn Thị ABC",
         "sex": "Nữ",
         "birthday": "1999-09-09",
@@ -200,6 +208,7 @@
         "status": "Đang làm việc" 
     },
     {
+        "id": 9,
         "name": "Nguyễn Thị ABC",
         "sex": "Nữ",
         "birthday": "1999-09-09",
@@ -225,6 +234,7 @@
         "status": "Đang làm việc" 
     },
     {
+        "id": 10,
         "name": "Nguyễn Thị ABC",
         "sex": "Nữ",
         "birthday": "1999-09-09",

@@ -37,6 +37,13 @@ body {
   cursor: pointer;
 }
 
+.link {
+  text-decoration: none;
+  width: 100%;
+  font-size: 100%;
+  font-family: "Poppins";
+}
+
 .icon {
   font-size: 300%;
 }
@@ -152,3 +159,103 @@ table {
 .modal {
   padding-right: 0px !important;
 }
+
+.Form {
+  background-color: #FFFFFF;
+  width: 68%;
+  height: 85%;
+  border: 1px solid black;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.Form h4 {
+  display: block;
+  font-family: 'Raleway';
+  font-size: 105%;
+  font-weight: 700;
+  background-color: #E1963C;
+  color: black;
+  width: 90%;
+  line-height: 200%;
+  border-top-right-radius: 10pt;
+  border-bottom-right-radius: 10pt;
+  padding-left: 4px;
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+
+.fixdon {
+  background-color: transparent;
+  border: none;
+  padding: 0%;
+  text-decoration: underline;
+}
+
+.fixdon:hover {
+  color: #E1963C;
+  cursor: pointer;
+}
+
+.functionButton {
+  width: 100%;
+  border-radius: 8pt;
+  background-color: #E1963C;
+  font-weight: 600;
+}
+
+.functionButton:hover {
+  cursor: pointer;
+  background-color: black;
+  color: #FFFFFF;
+}
+
+.Xbutton {
+  font-weight: 700;
+  width: fit-content;
+  border: none;
+  background-color: transparent;
+}
+
+.Xbutton:hover {
+  background-color: rgba(131, 127, 127, 0.484);
+  cursor: pointer;
+}
+
+.Rest input::-webkit-outer-spin-button, .Rest input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.model {
+  z-index: 99;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+}
+
+.Thongbao {
+  min-width: 1000px;
+  height: 680px;
+  margin: 2% 5% 2% 20%;
+}
+
+.Thongbao .paper, .main .paper {
+  background: #eec491;
+  height: 250px;
+  width: 80%; 
+  margin: auto;
+  padding: 0 9px;
+}
+
+.Thongbao .paper:hover, .main .paper:hover {
+  background: #E1963C;
+  cursor: pointer;
+} 

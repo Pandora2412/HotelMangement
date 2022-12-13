@@ -63,7 +63,7 @@ export const ConfirmModal = (props) => {
             <Modal.Body>
                 <h6 style = {{textAlign: "center"}}>{props.text}</h6>
                 <div className="d-flex align-items-center justify-content-center">
-                    <StyledButton style = {buttonStyle} onClick = {() => {props.open(""); props.openParent("") }}>Có</StyledButton>
+                    <StyledButton style = {buttonStyle} onClick = {() => {props.open(""); props.openParent(""); props.action()}}>Có</StyledButton>
                     <StyledButton style = {buttonStyle} onClick = {() => props.open("")}>Không</StyledButton>
                 </div>
             </Modal.Body>
