@@ -10,10 +10,33 @@ import Radio from '@mui/material/Radio';
 import RadioGroup from '@mui/material/RadioGroup';
 import FormLabel from '@mui/material/FormLabel';
 import FormControlLabel from '@mui/material/FormControlLabel';
+import BookingRoom from '../components/BookingRoom';
 
 const label = { inputProps: { 'aria-label': 'Checkbox demo' } };
 
 const BookingInfo =() =>{
+    const bookingRoomLists=[
+        {
+          id: '1',
+          dates: '3 ngày',
+          type: 'VIP ROOM',
+          price:'2.000.000',
+          bancong: 'Không ban công',
+          bancongPrice: '+0', 
+          view: 'View biển',
+          viewPrice: '+500.000'
+        },
+        {
+            id: '2',
+            dates: '3 ngày',
+            type: 'SUSPERIOR ROOM',
+            price:'1.000.000',
+            bancong: 'Có ban công',
+            bancongPrice: '+100.000', 
+            view: 'View hồ bơi',
+            viewPrice: '+300.000'
+          },
+    ]
     const [sex, setSex] = React.useState('');
     const handleChange = (event) => {
         setSex(event.target.value );
@@ -103,8 +126,8 @@ const BookingInfo =() =>{
                         <div className='info4'>
                             <h2>QUY ĐỊNH ĐẶT PHÒNG</h2>
                             <div className='plc_row row'>
-                                <div className='col-4'> <p>Check-in</p> </div>
-                                <div className='col-4'> <p>Check-out</p> </div>
+                                <div className='col-4'> <p><b>Check-in</b></p> </div>
+                                <div className='col-4'> <p><b>Check-out</b></p> </div>
                             </div>
                             <div className='plc_row row'>
                                 <div className='col-4'> <p>Từ 12:00 trưa</p> </div>
@@ -131,11 +154,37 @@ const BookingInfo =() =>{
                     </form>
                 </div>
                 
+
                 <div className='dondatphong col-3' style={{marginTop: '50px'}}>
-                        <h2>ĐƠN ĐẶT PHÒNG</h2>
-                        <p>19/10/2022 - 21/10/2022</p>
-                        <p>4 người</p>
-                    </div>
+                        <div className='dondatphong_first'>
+                            <h2>ĐƠN ĐẶT PHÒNG</h2>
+                            <p>19/10/2022 - 21/10/2022</p>
+                            <p>4 người</p>
+                            <div className='plc_row row'>
+                                <div className='col-5'> <p><b>Check-in</b></p> </div>
+                                <div className='col-5'> <p><b>Check-out</b></p> </div>
+                            </div>
+                            <div className='plc_row row'>
+                                    <div className='col-5'> <p>Từ 12:00 trưa</p> </div>
+                                    <div className='col-5'> <p>Trước 12:00 trưa</p> </div>
+                            </div>
+                        </div>
+                        <div>
+                            {
+                                bookingRoomLists.map((item) => (
+                                <BookingRoom id={item.id} dates={item.dates} type={item.type} price={item.price}
+                                 bancong={item.bancong} bancongPrice={item.bancongPrice} view={item.view} viewPrice={item.viewPrice}>
+                                </BookingRoom>
+                            ))
+                            }
+                        </div>
+                        <div className='dondatphong_total'>
+                            <div className='total_row'>
+                                <p><b>TỔNG CỘNG</b></p> 
+                                <p><b>11.700.000</b> VNĐ</p>
+                            </div>
+                        </div>
+                </div>
             </div>
         </div>
     );

@@ -1,6 +1,8 @@
 import './Search.css';
 import search from '../img/search.png';
 import TextField from '@mui/material/TextField';
+import {Link} from 'react-router-dom';
+
 const Search = () => {
     return(
         <div className='tracuu'>
@@ -11,7 +13,9 @@ const Search = () => {
                 </div>
                 <div className='col-6'>
                     <TextField id="outlined-basic" label="Please enter your booking ID" variant="outlined" />
-                    <img src={search}></img>
+                    <Link className="nav-link" to="/searchpage">
+                        <img src={search}></img>
+                    </Link>
                 </div>
             </div>
         </div>

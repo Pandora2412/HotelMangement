@@ -105,14 +105,33 @@ const EmptyRoom =() =>{
                     }
                     </div>
                     <div className='dondatphong col-3' style={{marginTop: '50px'}}>
-                        <h2>ĐƠN ĐẶT PHÒNG</h2>
-                        <p>19/10/2022 - 21/10/2022</p>
-                        <p>4 người</p>
-                        <Link className="nav-link" to="/bookinginfo">
-                            <form className="d-flex" role="search">
-                                <button className="btn btn-outline-success" type="submit">Xác nhận</button>
-                            </form>
-                        </Link>
+                        <div className='dondatphong_first'>
+                            <h2>ĐƠN ĐẶT PHÒNG</h2>
+                            <p>19/10/2022 - 21/10/2022</p>
+                            <p>4 người</p>
+                            <div className='plc_row row'>
+                                <div className='col-5'> <p><b>Check-in</b></p> </div>
+                                <div className='col-5'> <p><b>Check-out</b></p> </div>
+                            </div>
+                            <div className='plc_row row'>
+                                    <div className='col-5'> <p>Từ 12:00 trưa</p> </div>
+                                    <div className='col-5'> <p>Trước 12:00 trưa</p> </div>
+                            </div>
+                        </div>
+                        <div className='dondatphong_total'>
+                            <div className='total_row'>
+                                <p><b>TỔNG CỘNG</b></p> 
+                                <p><b>0</b> VNĐ</p>
+                            </div>
+                            <Link className="nav-link" to="/bookinginfo">
+                                <form className="d-flex" role="search">
+                                    <button className="btn btn-outline-success booking_submit" type="submit">Xác nhận</button>
+                                </form>
+                            </Link>
+                        </div>
+
+
+
                     </div>
                 </div>
 

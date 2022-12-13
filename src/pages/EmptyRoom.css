@@ -10,6 +10,10 @@
     padding-top: 10px;
 }
 
+.select_room_type p{
+    font-size: 20px;
+}
+
 .select_room_type h2{
     padding-left: 40px;
     margin-bottom: 10px;
@@ -55,4 +59,29 @@
     right: 10px;
     margin-left: auto;
     z-index: 1000;
+}
+
+.dondatphong p{
+    margin-bottom: 5px;
+}
+
+.dondatphong_first{
+    margin-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 2.5px solid var(--cam);
+}
+.total_row{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.booking_submit{
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.dondatphong p{
+    font-size: 18px;
 }

@@ -1,0 +1,31 @@
+.searchRow{
+    margin: 20px 200px 20px 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.dathanhtoan{
+    display: flex;
+}
+
+.dathanhtoan p{
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.dathanhtoan img{
+    width: 60px;
+    height: 60px;
+}
+
+
+.madatphong #outlined-read-only-input{
+    width: 400px;
+    font-weight: bold;
+}
+
+.madatphong img{
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+}

@@ -89,7 +89,7 @@ body, .App {
 #checkin{
   margin-right: 20px;
   width: 265px;
-  height: 45px;
+  height: 53px;
   background-color: #ffffff80;
   color:white;
 }
@@ -97,33 +97,20 @@ body, .App {
 #checkout{
   margin-right: 20px;
   width: 265px;
-  height: 45px;
+  height: 53px;
   background-color: #ffffff80;
   color:white;
   
 }
 
-.checkin-out .khach{
+.checkin-out #sokhach{
   padding: 0;
   width: 165px;
-  height: 45px;
   background-color: #ffffff80;
-  color:white;
   border-radius: 5px;
 }
 
-.checkin-out #demo-simple-select{
-  padding: 0;
-  width: 265px;
-  height: 45px;
-}
 
-.checkin-out #demo-simple-select-label{
-  padding: 0;
-  margin: auto;
-  position: absolute;
-  height: fit-content;
-}
 #datngay{
   margin-left: 100px;
   width: 175px;
@@ -140,7 +127,7 @@ body, .App {
 
 #boxchat{
   position: fixed;
-  z-index: 1000;
+  z-index: 2000;
   bottom: 10px;
   right: 0px;
 }
@@ -214,4 +201,22 @@ body, .App {
   border-radius: 10px;
   margin-left: 25px;
   margin-top: 22px;
+}
+
+
+/* BOOKING ROOM */
+.roomRow{
+  display: flex;
+  justify-content: space-between;
+}
+
+.roomRow img{
+  width: 25px;
+  height: 25px;
+}
+
+.bookingRoom{
+  margin-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 2.5px solid var(--cam);
 }

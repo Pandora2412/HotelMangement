@@ -11,6 +11,7 @@ import Contact from './pages/Contact.js';
 import Search from './pages/Search.js';
 import EmptyRoom from './pages/EmptyRoom.js';
 import BookingInfo from './pages/BookingInfo.js';
+import SearchPage from './pages/SearchPage.js';
 
 
 function App() {
@@ -36,6 +37,7 @@ function App() {
             <Route path='/search' element={<Search></Search>}></Route>
             <Route path='/emptyroom' element={<EmptyRoom></EmptyRoom>}></Route>
             <Route path='/bookinginfo' element={<BookingInfo></BookingInfo>}></Route>
+            <Route path='/searchpage' element={<SearchPage></SearchPage>}></Route>
         </Routes>
       <Footer></Footer>
       
