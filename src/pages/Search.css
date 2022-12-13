@@ -1,0 +1,26 @@
+.tracuu{
+    height: 180px;
+}
+.tracuu .row{
+    margin: 0;
+}
+.tracuu .row .col-6{
+    display: flex;
+    padding: 0;
+    margin: 0;
+    margin-top: 50px;
+    justify-content: center;
+}
+.tracuu .row .col-6 h2{
+    margin-bottom: 0;
+}
+
+.tracuu .row .col-6 #outlined-basic{
+    width: 400px;
+}
+
+.tracuu .row .col-6 img{
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+}

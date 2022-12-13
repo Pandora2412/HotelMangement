@@ -1,0 +1,217 @@
+:root {
+  --cam: #E1963C;
+  --hongnhat: #FFF8F6;
+  --hongdam: #FFE5CF;
+}
+* {
+  box-sizing: border-box;
+}
+
+html,
+body, .App {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  background: var(--hongnhat);
+}
+
+/* NAVBAR */
+.navbar{
+  background-color: #00000030;
+  border-radius: 30px;
+  margin: 10px 30px;
+}
+
+.nav-item .nav-link {
+  color: white;
+  font-size: 18px;
+}
+
+#fictionlogo{
+  color: white;
+  line-height: 1.1;
+  padding-left: 5px;
+}
+
+#navbarSupportedContent ul li{
+  margin: 0 10px;
+}
+
+#navbarSupportedContent ul li a{
+  font-size: 20px;
+}
+
+#tracuu{    
+  width: 193px;
+  height: 42px;
+  background-color: var(--cam);
+  border: var(--cam);
+  font: 18px Arial;
+  color: white;
+  border-radius: 20px;
+}
+
+/* HEADER */
+
+.header{
+  width: 100%;
+  height: 500px;
+  padding-top: 10px;
+  background-image: url("./img/Background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0px;
+  position: relative;
+}
+
+.banner_title{
+  width: fit-content;
+  background-color: #00000030;
+  color: white;
+  font-weight: 500;
+  font-size: 75px;
+  font-family: 'Times New Roman', Times, serif;
+  position: absolute;
+  top: 150px;
+  left: 100px;
+  padding: 0 15px; 
+}
+
+.checkin-out{
+  position: absolute;
+  top: 300px;
+  left: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#checkin{
+  margin-right: 20px;
+  width: 265px;
+  height: 45px;
+  background-color: #ffffff80;
+  color:white;
+}
+
+#checkout{
+  margin-right: 20px;
+  width: 265px;
+  height: 45px;
+  background-color: #ffffff80;
+  color:white;
+  
+}
+
+.checkin-out .khach{
+  padding: 0;
+  width: 165px;
+  height: 45px;
+  background-color: #ffffff80;
+  color:white;
+  border-radius: 5px;
+}
+
+.checkin-out #demo-simple-select{
+  padding: 0;
+  width: 265px;
+  height: 45px;
+}
+
+.checkin-out #demo-simple-select-label{
+  padding: 0;
+  margin: auto;
+  position: absolute;
+  height: fit-content;
+}
+#datngay{
+  margin-left: 100px;
+  width: 175px;
+  height: 45px;
+  background-color: var(--cam);
+  border: var(--cam);
+  font: 20px sans-serif;
+  color: white;
+  border-radius: 10px;
+}
+
+
+/* BOX CHAT */
+
+#boxchat{
+  position: fixed;
+  z-index: 1000;
+  bottom: 10px;
+  right: 0px;
+}
+
+#gallery_line{
+  width: 20%;
+  border-bottom: 2px solid var(--cam);
+}
+
+/* FOOTER */
+
+.footer{
+  width: 100%;
+  height: 200px;
+  background-color: black;
+}
+
+#footer_2col, #footer_3col, #footer_4col{
+  color: white;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+#footer_1col{
+  color: white;
+}
+
+
+.icon{
+  margin: 4px;
+}
+   
+/* ROOM DETAILS */
+.room .row{
+  margin: 30px 100px;
+  margin-top: 50px;
+}
+
+.room .row .col-5{
+  padding: 0;
+}
+
+.room .row .col-5 .carousel-inner .carousel-item img{
+  width: 400px;
+  height: 250px;
+}
+
+.room .row .col-5 h2{
+  margin: 0 25px;
+}
+
+
+.room .row .col-5 p{
+  margin-bottom: 5px;
+  margin-left: 25px;
+}
+
+.room .row .col-5 .price{
+  margin: 10px 0 20px 25px;
+  font-weight: bold;
+}
+
+
+#datngay2{
+  width: 150px;
+  height: 40px;
+  background-color: var(--cam);
+  border: var(--cam);
+  font: 20px sans-serif;
+  color: white;
+  border-radius: 10px;
+  margin-left: 25px;
+  margin-top: 22px;
+}

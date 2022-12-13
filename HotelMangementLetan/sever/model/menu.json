@@ -1,0 +1,42 @@
+[
+    {
+        "price": 1000000,
+        "label": "Spa cao cấp",
+        "value": "spaVip"
+    },
+    {
+        "price": 500000,
+        "label": "Spa thường",
+        "value": "spa"
+    },
+    {
+        "price": 50000,
+        "label": "Giặt sấy",
+        "value": "laundry"
+    },
+    {
+        "price": 25000,
+        "label": "Nước ngọt",
+        "value": "drinks"
+    },
+    {
+        "price": 18000,
+        "label": "Coffe",
+        "value": "coffe"
+    },
+    {
+        "price": 18000,
+        "label": "Coffe sữa",
+        "value": "milkcoffe"
+    },
+    {
+        "price": 18000,
+        "label": "Trà",
+        "value": "tea"
+    },
+    {
+        "price": 15000,
+        "label": "Nước suối",
+        "value": "water"
+    }
+]
