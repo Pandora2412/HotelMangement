@@ -7,9 +7,9 @@ import {styled } from '@mui/material/styles';
 
 export const StyledTableRow = styled(TableRow)(() => ({
   fontSize: '14px',
-  '&:nth-of-type(odd)': {
+  /*'&:nth-of-type(odd)': {
     backgroundColor: 'rgba(255, 150, 60, 0.2)',
-  },
+  },*/
   '&:last-child td, &:last-child th': {
     border: 0,
   },

@@ -227,7 +227,7 @@ const Phong = () => {
       else cost += parseInt(costs["city"])
       if (room["bancong"] === "Có") cost += parseInt(costs["balcony"])
       //cost += costs[room["view"].toLowerCase()]
-      return cost.toLocaleString('de-DE', { minimumFractionDigits: 0 })
+      return cost
     }
 
     const handleSortRequest = (id) => {
@@ -279,7 +279,8 @@ const Phong = () => {
                           <StyledTableCell align = {columns[index].align} key = {index}>{value}</StyledTableCell>
                       )})
                   }
-                  {<StyledTableCell align = "right">{calcCost(row)}</StyledTableCell>}
+                  
+                  {<StyledTableCell align = "right">{calcCost(row).toLocaleString('de-DE', { minimumFractionDigits: 0 })}</StyledTableCell>}
                       
                   
                   <StyledTableCell><HiPencilAlt className = "btn-edit" onClick = {() => setOpenModalRoom({...row})}></HiPencilAlt></StyledTableCell>

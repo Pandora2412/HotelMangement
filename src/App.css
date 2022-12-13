@@ -259,3 +259,11 @@ table {
   background: #E1963C;
   cursor: pointer;
 } 
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+  background-color: #E1963C;
+}
+
+.nav-link {
+  color: #E1963C;
+}

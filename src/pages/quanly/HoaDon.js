@@ -12,8 +12,10 @@ import TableBody from '@mui/material/TableBody'
 import TablePagination from '@mui/material/TablePagination';
 
 import {StyledTableRow, StyledTableCell, StyledTableHead} from '../../components/Table'
-
+import { StyledButton } from '../../components/Button';
 import ReceiptReadOnLy from '../../components/ReceiptReadOnLy'
+import Payment from '../../components/Payment'
+
 const HoaDon = () => {
     const donthuDB = require('../../model/donthu.json')
     const [payments, setPayments] = useState([]) 
@@ -87,7 +89,7 @@ const HoaDon = () => {
         {
             id: 'pay',
             label: 'Chi',
-            sort: false,
+            sort: true,
             align: 'center'
         },
         {
@@ -109,6 +111,7 @@ const HoaDon = () => {
     
     
     const [openModalReceipt, setOpenModalReceipt] = useState("");
+    const [openModalPayment, setOpenModalPayment] = useState("")
 
     const handleSortRequest = (id) => {
       setOrderByColumn(id)
@@ -227,12 +230,12 @@ const HoaDon = () => {
                     <Tab.Pane eventKey="chi">
                     <TableContainer>
                         <Table>
-                            <StyledTableHead columns = {columns} orderByColumn = {orderByColumn} orderDirection = {orderDirection} handleSortRequest = {handleSortRequest}></StyledTableHead>
+                            <StyledTableHead columns = {columnsPay} orderByColumn = {orderByColumn} orderDirection = {orderDirection} handleSortRequest = {handleSortRequest}></StyledTableHead>
                                 <TableBody>
                                     {
-                                        donthuDB.filter(receipt => receipt['formnum'].toLowerCase().includes(filter)).sort(
+                                        payments.filter(receipt => receipt['formnum'].toLowerCase().includes(filter)).sort(
                                             function(a, b) {
-                                                if (orderByColumn  === "checkin" || orderByColumn === "checkout") {
+                                                if (orderByColumn === "checkout") {
                                                     let da = new Date(a[orderByColumn]);
                                                     let db = new Date(b[orderByColumn]);
                                                     if (da === db) {
@@ -247,27 +250,34 @@ const HoaDon = () => {
                                         
                                         <StyledTableRow key={row.id}>
                                             <StyledTableCell align = "center">{row['formnum']}</StyledTableCell>
-                                            <StyledTableCell align = "center">{(new Date(row['customer']['checkin'])).toLocaleString()}</StyledTableCell>
-                                            <StyledTableCell align = "center">{(new Date(row['customer']['checkout'])).toLocaleString()}</StyledTableCell>
-                                            <StyledTableCell align = "center">{row['customer']['email']}</StyledTableCell>
-                                            <StyledTableCell align = "center">{row['customer']['phone']}</StyledTableCell>
-                                            <StyledTableCell align = "center">{row['paid']}</StyledTableCell>
-                                            <StyledTableCell align = "center" onClick={() => setOpenModalReceipt(row)}><button style={{backgroundColor: 'transparent', border: 0, color: '#E1963C'}}>Xem</button></StyledTableCell>
+                                            <StyledTableCell align = "center">{(new Date(row['company']['time'])).toLocaleString()}</StyledTableCell>
+                                            <StyledTableCell align = "center">{row['company']['name']}</StyledTableCell>
+                                            <StyledTableCell align = "center">{row['company']['email']}</StyledTableCell>
+                                            <StyledTableCell align = "center">{row['total']}</StyledTableCell>
+                                            <StyledTableCell align = "center" onClick={() => setOpenModalPayment(row)}><button style={{backgroundColor: 'transparent', border: 0, color: '#E1963C'}}>Xem</button></StyledTableCell>
                                         </StyledTableRow>
                                     ))}
 
                                 </TableBody>
                             </Table>
                             </TableContainer>
-                            <TablePagination component="div" count = {donthuDB.length} page={page}
-                            onPageChange={(e, newPage) => setPage(newPage)}
-                            rowsPerPage={10}
-                            rowsPerPageOptions={[]}
-                            />
+                            <Row style={{marginTop: "10px"}}>
+                                <Col>
+                                    <StyledButton onClick={() => setOpenModalPayment(true)}>Thêm đơn chi mới</StyledButton>
+                                </Col>
+                                <Col>
+                                    <TablePagination component="div" count = {payments.length} page={page}
+                                    onPageChange={(e, newPage) => setPage(newPage)}
+                                    rowsPerPage={10}
+                                    rowsPerPageOptions={[]}
+                                    />
+                                </Col>
+                            </Row>
                     </Tab.Pane>
                 </Tab.Content>
           </Tab.Container>
           {openModalReceipt !== "" &&  <div className="model" style={{background: "rgba(49,49,49,0.8)"}}><ReceiptReadOnLy receipt={openModalReceipt} open={setOpenModalReceipt}></ReceiptReadOnLy></div>}
+          {openModalPayment !== "" && <div className="model" style={{background: "rgba(49,49,49,0.8)"}}><Payment payment={openModalPayment} open={setOpenModalPayment} payments={payments} setPayments = {setPayments}></Payment></div>}
         </div>
     )
 }
