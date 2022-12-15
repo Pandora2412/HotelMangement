@@ -1,0 +1,125 @@
+.Admin .Row {
+    padding-top: 10px;
+    background-color: #F6DBBE;
+    padding-bottom: 8px;
+    float: left;
+    width: 100%;
+}
+
+.Admin .row1 {
+    float: left;
+    background-color: #E1963C;
+    width: 100%;
+}
+ 
+.Admin .name {
+    float: left;
+    padding-left: 20px;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    width: 8%;
+}
+
+.Admin .CCCD {
+    float: left;
+    padding-left: 60px;
+    padding-bottom: 0.5%;
+    padding-top: 0.5%;
+    width: 8%;
+    width: 10%;
+}
+
+.Admin .sdt {
+    float: left;
+    padding-left: 5%;
+    padding-bottom: 0.5%;
+    padding-top: 0.5%;
+    width: 8%;
+    width: 8%
+}
+
+.Admin .ten {
+    float: left;
+    padding-left: 2%;
+    width: 7%;
+}
+
+.Admin .cccd {
+    float: left;
+    padding-left: 7%;
+    width: 4.5%;
+}
+
+.Admin .phone {
+    float: left;
+    padding-left: 8%;
+    width: 9%;
+}
+
+.Admin .email {
+    float: left;
+    padding-left: 75px;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    width: 12%;
+}
+
+.Admin .username {
+    float: left;
+    padding-left: 70px;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    width: 10%;
+}
+
+.Admin .password {
+    float: left;
+    padding-left: 75px;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    width: 8%;
+}
+
+.Admin .mail {
+    float: left;
+    padding-left: 8%;
+    width: 2.5%;
+}
+
+.Admin .tendangnhap {
+    float: left;
+    padding-left: 11%;
+    width: 9%;
+}
+
+.Admin .matkhau {
+    float: left;
+    padding-left: 4%;
+    width: 5%;
+}
+
+.Admin .trangthai {
+    float: left;
+    padding-left: 2%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    width: 5%;
+}
+
+.Admin .thaydoi {
+    float: left;
+    padding-left: 4%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    width: 5%;
+}
+
+.Admin .add1 {
+    width: 100%;
+    float: left;
+}
+
+.Admin .add1 img {
+    float: right;
+    width: 5%;
+}

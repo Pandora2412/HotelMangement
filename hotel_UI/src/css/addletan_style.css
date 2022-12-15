@@ -1,0 +1,27 @@
+.Admin .empty {
+    padding: 15px;
+}
+
+.Admin .r1 {
+    background-image: url("../Image/info.png");
+    background-repeat: no-repeat;
+    padding: 20px;
+}
+
+.Admin .p1 {
+    float: left;
+    width: 30%;
+}
+
+.Admin .b form {
+    text-align: center;
+}
+
+.Admin .b input[type="text"] {
+    padding: 15px 40px;
+}
+
+.Admin .add {
+    width: 100%;
+    float: right;
+}

@@ -1,0 +1,57 @@
+.Admin .header {
+    background-color: #F6DBBE;
+    width: 100%;
+    padding-bottom: 5%;
+    padding-top: 0.1%;
+}
+
+.Admin .logo img {
+    width: 100%;
+    float: left;
+    
+}
+
+.Admin .logo {
+    float: left;
+    width: 5%;
+    padding-left: 2%;
+}
+
+.Admin .hotelname {
+    padding-top: 1.3%;
+    float: left;
+    text-align: left;
+}
+
+.Admin .quanly {
+    float: right;
+    width: 8%;
+    padding-top: 2%;
+    -webkit-text-fill-color: black;
+}
+
+.Admin .quanly a {
+    text-decoration: none;
+}
+
+.Admin .letan {
+    float: right;
+    width: 8%;
+    padding-top: 2%;
+    -webkit-text-fill-color: black;
+}
+
+.Admin .letan a {
+    text-decoration: none;
+}
+
+.Admin .logout {
+    float: right;
+    width: 10%;
+    padding-top: 2%;
+    -webkit-text-fill-color: black;
+}
+
+.Admin .logout a {
+    text-decoration: none;
+}
