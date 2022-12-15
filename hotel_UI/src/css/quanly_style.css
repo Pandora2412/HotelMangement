@@ -1,0 +1,70 @@
+.Info {
+    padding-top: 5px;
+    background-image: url('../Image/info.png');
+    background-repeat: no-repeat;
+    padding: 20px;
+    text-align: left;
+    color: white;
+    width: 30%;
+    font-size: larger;
+}
+
+.empty {
+    padding: 15px;
+}
+
+.part1 {
+    padding-left: 40px;
+    width: 35%;
+    float: left;
+}
+
+.b input[type=text] {
+    padding: 12px 20px;
+    box-sizing: border-box;
+}
+
+.add input[type=text] {
+    padding: 12px 20px;
+    box-sizing: border-box;
+}
+
+.myForm input[type=text] {
+    padding: 12px 20px;
+    box-sizing: border-box;
+}
+
+.Col {
+    float: left;
+    width: 70%;
+}
+
+.r {
+    float: left;
+    width: 100%;
+}
+
+.img {
+    float: left;
+    width: 30%;
+}
+
+.button {
+    float: left;
+    width: 100%;
+    padding-left: 25%;
+    padding-top: 50px;
+}
+
+.button1 {
+    float: left;
+    width: 5%;
+    padding-left: 10%;
+    padding-top: 50px;
+}
+
+.button1 img {
+    width: 190%;
+}
+
+

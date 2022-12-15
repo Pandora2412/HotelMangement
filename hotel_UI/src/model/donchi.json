@@ -1,0 +1,28 @@
+[
+    {
+     "formnum": "ABC0003",
+     "company": {
+      "name": "XYZ",
+      "representative": "Nguyễn B",
+      "phone": "0777777777",
+      "email": "a@gmail.com",
+      "time": "2022-12-25T10:00"
+     },
+     "products": [
+      {
+       "name": "Giường đơn",
+       "price": 1100000,
+       "quantity": 50,
+       "totalPrice": 55000000
+      },
+      {
+       "name": "Đèn ngủ",
+       "price": 110000,
+       "quantity": 50,
+       "totalPrice": 5500000
+      }
+     ],
+     "reason": "Mua giường mới",
+     "total": 60500000
+    }
+]

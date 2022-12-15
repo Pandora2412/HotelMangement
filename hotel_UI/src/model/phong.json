@@ -1,0 +1,263 @@
+[
+	{
+		"id": 101,
+		"singlebed": 1,
+		"doublebed": 0,
+		"num": 1,
+		"type": "Standard",
+		"view": "Biển",
+		"bancong": "Có",
+		"price": 1100000,
+		"toa": "A",
+		"bookday": [
+			{
+				"formnum": "ABC0001",
+				"checkin": "2022-11-05T12:00",
+				"checkout": "2022-11-09T13:00"
+			},
+			{
+				"formnum": "ABC0002",
+				"checkin": "2022-11-08T11:00",
+				"checkout": "2022-11-12T13:00"
+			}
+		]
+	},
+	{
+		"id": 102,
+		"singlebed": 0,
+		"doublebed": 1,
+		"num": 2,
+		"type": "Standard",
+		"view": "Thành phố",
+		"bancong": "Có",
+		"price": 600000,
+		"toa": "A",
+		"bookday": [
+			{
+				"formnum": "ABC0003",
+				"checkin": "2022-11-05T7:00",
+				"checkout": "2022-11-10T9:00"
+			},
+			{
+				"formnum": "ABC0004",
+				"checkin": "2022-11-15T11:00",
+				"checkout": "2022-11-19T13:00"
+			}
+		]
+	},
+	{
+		"id": 103,
+		"singlebed": 4,
+		"doublebed": 0,
+		"num": 4,
+		"type": "Standard",
+		"view": "Hồ bơi",
+		"bancong": "Có",
+		"price": 800000,
+		"toa": "A",
+		"bookday": []
+	},
+	{
+		"id": 104,
+		"singlebed": 4,
+		"doublebed": 0,
+		"num": 4,
+		"type": "Standard",
+		"view": "Hồ bơi",
+		"bancong": "Có",
+		"price": 800000,
+		"toa": "A",
+		"bookday": []
+	},
+	{
+		"id": 105,
+		"singlebed": 4,
+		"doublebed": 0,
+		"num": 4,
+		"type": "Standard",
+		"view": "Hồ bơi",
+		"bancong": "Có",
+		"price": 800000,
+		"toa": "A",
+		"bookday": []
+	},
+	{
+		"id": 106,
+		"singlebed": 3,
+		"doublebed": 0,
+		"num": 3,
+		"type": "Superior",
+		"view": "Hồ bơi",
+		"bancong": "Không",
+		"price": 1300000,
+		"toa": "A",
+		"bookday": []
+	},
+	{
+		"id": 107,
+		"singlebed": 1,
+		"doublebed": 0,
+		"num": 1,
+		"type": "VIP",
+		"view": "Hồ bơi",
+		"bancong": "Không",
+		"price": 2300000,
+		"toa": "A",
+		"bookday": [
+			{
+				"formnum": "ABC0005",
+				"checkin": "2022-11-13T7:00",
+				"checkout": "2022-11-16T10:00"
+			}
+		]
+	},
+	{
+		"id": 108,
+		"singlebed": 4,
+		"doublebed": 0,
+		"num": 4,
+		"type": "Standard",
+		"view": "Thành phố",
+		"bancong": "Có",
+		"price": 600000,
+		"toa": "A",
+		"bookday": [
+			{
+				"formnum": "ABC0006",
+				"checkin": "2022-11-13T7:00",
+				"checkout": "2022-11-16T10:00"
+			},
+			{
+				"formnum": "ABC0007",
+				"checkin": "2022-11-25T9:00",
+				"checkout": "2022-11-31T8:00"
+			},
+			{
+				"formnum": "ABC0008",
+				"checkin": "2022-11-14T7:00",
+				"checkout": "2022-11-16T13:00"
+			}
+		]
+	},
+	{
+		"id": 109,
+		"singlebed": 0,
+		"doublebed": 1,
+		"num": 2,
+		"type": "Standard",
+		"view": "Thành phố",
+		"bancong": "Có",
+		"price": 600000,
+		"toa": "A",
+		"bookday": []
+	},
+	{
+		"id": 110,
+		"singlebed": 0,
+		"doublebed": 1,
+		"num": 2,
+		"type": "Standard",
+		"view": "Thành phố",
+		"bancong": "Có",
+		"price": 600000,
+		"toa": "A",
+		"bookday": []
+	},
+	{
+		"id": 111,
+		"singlebed": 0,
+		"doublebed": 1,
+		"num": 2,
+		"type": "Standard",
+		"view": "Thành phố",
+		"bancong": "Không",
+		"price": 500000,
+		"toa": "A",
+		"bookday": []
+	},
+	{
+		"id": 112,
+		"singlebed": 0,
+		"doublebed": 1,
+		"num": 2,
+		"type": "Standard",
+		"view": "Thành phố",
+		"bancong": "Không",
+		"price": 500000,
+		"toa": "A",
+		"bookday": []
+	},
+	{
+		"id": 113,
+		"singlebed": 1,
+		"doublebed": 1,
+		"num": 3,
+		"type": "Superior",
+		"view": "Hồ bơi",
+		"bancong": "Không",
+		"price": 1300000,
+		"toa": "A",
+		"bookday": [
+			{
+				"formnum": "ABC0009",
+				"checkin": "2022-12-01T7:00",
+				"checkout": "2022-12-03T10:00"
+			},
+			{
+				"formnum": "ABC0010",
+				"checkin": "2022-12-04T10:00",
+				"checkout": "2022-12-06T15:00"
+			},
+			{
+				"formnum": "ABC0011",
+				"checkin": "2022-12-07T8:00",
+				"checkout": "2022-12-10T15:00"
+			},
+			{
+				"formnum": "ABC0012",
+				"checkin": "2022-12-12T8:00",
+				"checkout": "2022-12-15T15:00"
+			}
+		]
+	},
+	{
+		"id": 114,
+		"singlebed": 1,
+		"doublebed": 0,
+		"num": 1,
+		"type": "Superior",
+		"view": "Hồ bơi",
+		"bancong": "Có",
+		"price": 1100000,
+		"toa": "A",
+		"bookday": [
+			{
+				"formnum": "ABC0013",
+				"checkin": "2022-11-13T8:30",
+				"checkout": "2022-11-16T10:00"
+			},
+			{
+				"formnum": "ABC0014",
+				"checkin": "2022-11-18T7:30",
+				"checkout": "2022-11-19T10:00"
+			},
+			{
+				"formnum": "ABC0015",
+				"checkin": "2023-01-06T7:30",
+				"checkout": "2023-01-08T10:00"
+			}
+		]
+	},
+	{
+		"id": 115,
+		"singlebed": 1,
+		"doublebed": 0,
+		"num": 0,
+		"type": "Standard",
+		"view": "Biển",
+		"bancong": "Có",
+		"price": 1100000,
+		"toa": "A",
+		"bookday": []
+	}
+]

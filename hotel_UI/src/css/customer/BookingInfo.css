@@ -1,0 +1,98 @@
+#info{
+    margin-top: 20px;
+}
+#info .row .line{
+    width: 68%;
+    border-bottom: 2px solid var(--cam);
+}
+
+.bookinginfo, .policy{
+    display: inline-block;
+    width: 100%;
+    background-color: var(--hongdam);
+    margin-left: 30px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.bookinginfo .info{
+    border-bottom: 2px solid var(--cam);
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.info3{
+    padding-bottom: 10px;
+    padding-top: 20px;
+}
+
+.info4{
+    border-bottom: 2px solid var(--cam);
+    padding-top: 20px;
+}
+
+.ip_row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+
+.bookinginfo .ip_row #outlined-basic, .bookinginfo .ip_row #outlined-helperText{
+    width: 400px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.bookinginfo .gioitinh{
+    width: 428px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.bookinginfo .cb_row{
+    display: flex;
+    align-items: center;
+}
+
+.bookinginfo .cb_row .checkbox{
+    margin-right: auto;
+}
+
+.bookinginfo .textfield #outlined-multiline-static{
+    width: 650px;
+    background-color: white;
+    padding: 0;
+    height: 40px;
+}
+
+.regulation p:first-child{
+    margin-top: 10px;
+}
+.regulation p{
+    margin-bottom: 5px;
+}
+
+.regulation_refund p{
+    padding-left: 30px;
+}
+
+.regulation{
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.booking .btn{
+    width: 150px;
+    height: 40px;
+    background-color: var(--cam);
+    border: var(--cam);
+    font: 20px sans-serif;
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    margin-left: auto;
+}
