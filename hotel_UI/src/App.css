@@ -503,6 +503,14 @@ table {
   padding-right: 0px !important;
 }
 
+.main .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+  background-color: #E1963C;
+}
+
+.main .nav-link {
+  color: #E1963C;
+}
+
  /*----------------------------------------------------*/
 .Customer .navbar{
   background-color: #00000030;
