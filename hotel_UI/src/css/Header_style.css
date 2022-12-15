@@ -1,0 +1,27 @@
+.header {
+    background-image: url('../Image/header.png');
+    background-size: 95%;
+    padding: 40px 50px;
+    width: 95%;
+    margin: auto;
+    background-repeat: no-repeat;
+}
+
+.quanly {
+    float: right;
+    width: 8%;
+    -webkit-text-fill-color: black;
+}
+.quanly a {
+    text-decoration: none;
+}
+
+.letan {
+    float: right;
+    width: 8%;
+    -webkit-text-fill-color: black;
+}
+
+.letan a {
+    text-decoration: none;
+}

@@ -1,0 +1,81 @@
+.row2 {
+    margin: auto;
+    background: #E1963C;
+    width: 95%;
+    border: 1px solid black;
+}
+
+.row1 {
+    margin: auto;
+    background: #F6DBBE;
+    width: 95%;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+ 
+.name {
+    display: inline-block;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 10%;
+}
+
+.CCCD {
+    display: inline-block;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 15%;
+}
+
+.sdt {
+    display: inline-block;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 15%;
+}
+
+.email {
+    display: inline-block;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 15%;
+}
+
+.username {
+    display: inline-block;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 15%;
+}
+
+.password {
+    display: inline-block;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 10%;
+}
+
+.trangthai {
+    display: inline-block;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 10%;
+}
+
+.thaydoi {
+    display: inline-block;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 10%;
+}
+
+.add {
+    width: 95%;
+    text-align: right;
+    margin-right: 2.5%;
+}
+
+.add img {
+    float: right;
+    width: 5%;
+}
