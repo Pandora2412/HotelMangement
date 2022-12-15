@@ -15,7 +15,7 @@ const ReceiptReadOnly = (props) => {
         props.setReceipts(props.receipts.filter(rec => rec['formnum'] !== receipt['formnum']))
     }
     return (
-        <div className = "Form">
+        <div className = "Form" style={{margin: '30px auto'}}>
             <Container fluid style = {{padding: '0'}}>
                 <Row>
                     <Col style={{textAlign: 'right'}}><button className="Xbutton" style={{fontSize: '150%'}} onClick={()=>{props.open("")}}>X</button></Col>
