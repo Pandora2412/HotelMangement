@@ -56,7 +56,7 @@ const Form = (props) => {
     //const location = useLocation();
 
     return (
-        <div className = "Form">
+        <div className = "Form" style={{margin: '30px auto'}}>
             <Container fluid style = {{padding: '0'}}>
                 <Row>
                     <Col style={{textAlign: 'right'}}><button className="Xbutton" style={{fontSize: '150%'}} onClick={()=>{
