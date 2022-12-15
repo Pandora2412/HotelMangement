@@ -1,0 +1,127 @@
+.Row {
+    padding-top: 10px;
+    background-color: #F6DBBE;
+    padding-bottom: 8px;
+    float: left;
+    width: 100%;
+}
+
+.row1 {
+    float: left;
+    background-color: #E1963C;
+    width: 100%;
+}
+ 
+.name {
+    float: left;
+    padding-left: 20px;
+    /* background-image: url("thanh.png"); */
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    width: 8%;
+}
+
+.CCCD {
+    float: left;
+    padding-left: 60px;
+    /* background-image: url("thanh.png"); */
+    padding-bottom: 0.5%;
+    padding-top: 0.5%;
+    width: 8%;
+    width: 10%;
+}
+
+.sdt {
+    float: left;
+    padding-left: 5%;
+    /* background-image: url("thanh.png"); */
+    padding-bottom: 0.5%;
+    padding-top: 0.5%;
+    width: 8%;
+    width: 8%
+}
+
+.ten {
+    float: left;
+    padding-left: 2%;
+    width: 7%;
+}
+
+.cccd {
+    float: left;
+    padding-left: 7%;
+    width: 4.5%;
+}
+
+.phone {
+    float: left;
+    padding-left: 8%;
+    width: 9%;
+}
+
+.email {
+    float: left;
+    padding-left: 75px;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    width: 12%;
+}
+
+.username {
+    float: left;
+    padding-left: 70px;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    width: 10%;
+}
+
+.password {
+    float: left;
+    padding-left: 75px;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    width: 8%;
+}
+
+.mail {
+    float: left;
+    padding-left: 8%;
+    width: 2.5%;
+}
+
+.tendangnhap {
+    float: left;
+    padding-left: 11%;
+    width: 9%;
+}
+
+.matkhau {
+    float: left;
+    padding-left: 4%;
+    width: 5%;
+}
+
+.trangthai {
+    float: left;
+    padding-left: 2%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    width: 5%;
+}
+.thaydoi {
+    float: left;
+    padding-left: 4%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    width: 5%;
+}
+
+.add1 {
+    width: 100%;
+    float: left;
+}
+
+.add1 img {
+    float: right;
+    width: 5%;
+}

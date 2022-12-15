@@ -1,0 +1,27 @@
+.empty {
+    padding: 15px;
+}
+
+.r1 {
+    background-image: url("info.png");
+    background-repeat: no-repeat;
+    padding: 20px;
+}
+
+.p1 {
+    float: left;
+    width: 30%;
+}
+
+.b form {
+    text-align: center;
+}
+
+.b input[type="text"] {
+    padding: 15px 40px;
+}
+
+.add {
+    width: 100%;
+    float: right;
+}

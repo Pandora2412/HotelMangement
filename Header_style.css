@@ -1,0 +1,57 @@
+.header {
+    background-color: #F6DBBE;
+    width: 100%;
+    /* padding: 1.9%; */
+    padding-bottom: 5%;
+    padding-top: 0.1%;
+}
+
+.logo img {
+    width: 100%;
+    float: left;
+    
+}
+
+.logo {
+    float: left;
+    width: 5%;
+    padding-left: 2%;
+}
+
+.hotelname {
+    padding-top: 1.3%;
+    float: left;
+    text-align: left;
+}
+
+.quanly {
+    float: right;
+    width: 8%;
+    padding-top: 2%;
+    -webkit-text-fill-color: black;
+}
+.quanly a {
+    text-decoration: none;
+}
+
+.letan {
+    float: right;
+    width: 8%;
+    padding-top: 2%;
+    -webkit-text-fill-color: black;
+}
+
+.letan a {
+    text-decoration: none;
+}
+
+.logout {
+    float: right;
+    width: 10%;
+    padding-top: 2%;
+    -webkit-text-fill-color: black;
+}
+
+.logout a {
+    text-decoration: none;
+}
