@@ -16,10 +16,10 @@ class Header extends Component {
                     FICTION
                 </div>
                 <div className="quanly">
-                    <Link to="/Khachhang/quanly" activeClassName="activeClass">Quản lý</Link>
+                    <Link to="/admin/quanly" activeClassName="activeClass">Quản lý</Link>
                 </div>
                 <div className="letan">
-                    <Link to="/Khachhang/" activeClassName="activeClass">Lễ tân</Link>
+                    <Link to="/admin/" activeClassName="activeClass">Lễ tân</Link>
                 </div>
                 <div className="logout">
                     <Link to="/" onClick={async () => {
