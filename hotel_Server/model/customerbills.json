@@ -1,0 +1,55 @@
+[
+ {
+  "formnum": "ABC0001",
+  "customer": {
+   "name": "Trần Văn X",
+   "id": "100000000001",
+   "phone": "1000000001",
+   "email": "XTran@gmail.com",
+   "bday": "2000-12-31",
+   "sex": false,
+   "checkin": "2022-12-13T12:00",
+   "checkout": "2022-12-15T13:00"
+  },
+  "accompanies": [
+   {
+    "name": "Trần Thị B",
+    "id": "110000000001"
+   }
+  ],
+  "rooms": [
+   {
+    "toa": "A",
+    "id": 101,
+    "name": "Phòng 101 tòa A: Standard 1 giường đơn, 0 giường đôi, view Biển, Có ban công",
+    "price": 1100000,
+    "quantity": 49,
+    "totalPrice": 2245833
+   },
+   {
+    "toa": "A",
+    "id": 102,
+    "name": "Phòng 102 tòa A: Standard 1 giường đơn, 0 giường đôi, view Biển, Có ban công",
+    "price": 1100000,
+    "quantity": 49,
+    "totalPrice": 2245833
+   }
+  ],
+  "services": [
+   {
+    "name": "Giặt sấy",
+    "price": 50000,
+    "quantity": 2,
+    "totalPrice": 100000
+   },
+   {
+    "name": "Nước ngọt",
+    "price": 25000,
+    "quantity": 3,
+    "totalPrice": 75000
+   }
+  ],
+  "total": 4666666,
+  "paid": 0
+ }
+]
